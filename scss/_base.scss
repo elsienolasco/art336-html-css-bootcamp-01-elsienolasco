@@ -43,7 +43,7 @@ h1 + p {
 }
 
 h2 {
-    @include fontSize(44px);
+    @include fontSize(40px);
     margin-top: 50px;
     margin-bottom: 8px;
     text-transform: none;
@@ -79,7 +79,7 @@ h5 {
     @include fontSize(24px);
     margin-top: 34px;
     margin-bottom: 4px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 h5 + p {
@@ -109,6 +109,13 @@ a:hover {
     color: lighten($color, 40%);
     transition: background-color 300ms linear;
     transition: color 300ms linear;
+}
+
+figcaption {
+    @include fontSize(16px);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-transform: none;
 }
 
 ul {
